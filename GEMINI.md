@@ -16,7 +16,7 @@ Chapter 19 Mathematics Portfolio documenting solutions, scans, proofs, and study
 - `STUDY-LOG.md` - Chronological log of weekly topics, completed proofs, and unresolved steps
 
 ## Guidelines & Best Practices
-1. **Empty Directories**: Git does not track empty folders. Maintain `.gitkeep` files in any empty scan or proof directories until content is added.
+1. **Empty Directories**: Git does not track empty folders. `sync.bat` now automatically creates `.gitkeep` in any empty folders before syncing so you never have to copy-paste them manually.
 2. **Syncing to GitHub**: 
-   - `sync.bat` in the repository root stages, commits with timestamp, and pushes all local changes to `origin/main`.
+   - `sync.bat` in the repository root automatically auto-detects empty directories, stages, commits with timestamp, and pushes all local changes to `origin/main`.
    - Cached GitHub credentials through Git Credential Manager are pre-configured.
