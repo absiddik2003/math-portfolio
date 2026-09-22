@@ -8,4 +8,4 @@ echo Pushing to GitHub...
 git push origin main
 echo.
 echo Sync completed successfully!
-timeout /t 3
+%SystemRoot%\System32\timeout.exe /t 3 >nul
